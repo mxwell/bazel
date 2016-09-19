@@ -1,0 +1,3 @@
+Use command like this:
+
+bazel build --embed_label "0.3.1.coccoc1" --stamp //scripts/packages:bazel-debian
