@@ -131,7 +131,7 @@ def CreateDebControl(extrafiles=None, **kwargs):
   # Create the control.tar file
   tar = StringIO()
   with tarfile.open('control.tar.gz', mode='w:gz', fileobj=tar) as f:
-    tarinfo = tarfile.TarInfo('control')
+    tarinfo = tarfile.TarInfo('./control')
     tarinfo.size = len(controlfile)
     f.addfile(tarinfo, fileobj=StringIO(controlfile))
     if extrafiles:
